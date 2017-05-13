@@ -14,7 +14,7 @@ namespace AI_Classifiers
             string _filePath = Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory);
             _filePath = Directory.GetParent(_filePath).FullName;
             _filePath = Directory.GetParent(Directory.GetParent(_filePath).FullName).FullName;
-            _filePath += @"\AI-Classifiers\Datasets\ArtificialData.csv";
+            _filePath += @"\AI-Classifiers\Datasets\wine.csv";
             this.DataContext = new ClassifierViewModel(_filePath);
             InitializeComponent();
         }
